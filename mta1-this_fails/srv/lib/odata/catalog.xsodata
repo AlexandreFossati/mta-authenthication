@@ -1,3 +1,0 @@
-service namespace "mta1.db" {
-  "mta1.db.tables::products" as "Products";
-}
