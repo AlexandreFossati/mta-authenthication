@@ -1,0 +1,18 @@
+{
+  "welcomeFile": "index.html",
+  "authenticationMethod": "none",
+  "routes": [
+    {
+      "source": "(.*)(.xsodata)",
+      "destination": "srv"
+    },
+    {
+      "source": "(.*)(.xsjs)",
+      "destination": "srv"
+    },
+    {
+      "source": "/(.*)",
+      "localDir": "resources"
+    }
+  ]
+}
