@@ -1,0 +1,24 @@
+{
+  "welcomeFile": "index.html",
+  "authenticationMethod": "route",
+  "routes": [
+    {
+      "source": "(.*)(.xsodata)",
+      "authenticationType": "xsuaa",
+      "scope": "$XSAPPNAME.MTA1_Viewer",
+      "destination": "srv"
+    },
+    {
+      "source": "(.*)(.xsjs)",
+      "authenticationType": "xsuaa",
+      "scope": "$XSAPPNAME.MTA1_Viewer",
+      "destination": "srv"
+    },
+    {
+      "source": "/(.*)",
+      "authenticationType": "xsuaa",
+      "scope": "$XSAPPNAME.MTA1_Viewer",
+      "localDir": "resources"
+    }
+  ]
+}
