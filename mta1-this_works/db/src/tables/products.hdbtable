@@ -1,8 +1,0 @@
-COLUMN TABLE "mta1.db.tables::products" 
-(
-    "id" INTEGER, 
-    "name" VARCHAR(100),
-    "category" VARCHAR(100),
-    "supplier" INTEGER,
-    PRIMARY KEY ("id") 
-)
